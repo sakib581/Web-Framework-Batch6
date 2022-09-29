@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Automation">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.ebay.com/"/>
+    <parameter name="cloud" value="false"/>
+    <parameter name="os" value="mac"/>
+    <parameter name="sauce" value="false"></parameter>
+
+    <test name="Automation Tests">
+
+        <!--  <groups>
+              <run>
+                 &lt;!&ndash; include to check with selenium 4&ndash;&gt;
+                 &lt;!&ndash; <include name="regression"/>&ndash;&gt;
+                   <exclude name="smoke"></exclude>
+              </run>
+          </groups>-->
+
+        <!--<packages>
+            <package name="com.worldofautomation.tests.*"></package>
+        </packages>-->
+
+        <classes>
+            <class name="com.woa.tests.DBConnect">
+                <!-- <methods>
+                     <include name="validateUserCanSeeErrorMessageTryingToLoginWithoutPhone1"/>
+                 </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>
